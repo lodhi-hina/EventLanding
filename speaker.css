@@ -1,0 +1,442 @@
+/* speaker.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+.navbar{
+    background-color: whitesmoke;
+    color: #201818;
+    justify-content: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: auto;
+    width: 100%;
+}
+.navbar.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    margin-left: auto; 
+}
+.navbar-menu a{
+    color: #221a1a;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar-menu a:hover{
+    background-color: #721f1f;
+    border-radius: 5px;
+    color: white;
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    margin-right: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.information {
+    max-width: 500px;
+}
+
+.information h1 {
+    font-size: 2.5rem;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.profession {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+}
+
+.details li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.details a {
+    color: blue;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+.bio {
+    font-size: 2em;
+    color: brown;
+}
+
+.hr {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hr h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hr p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.book-now {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.book-now:hover {
+    background-color: orangered;
+}
+
+.hr2 {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.heading2 {
+    font-size: 2rem;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+#s1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.n1 {
+    text-align: center;
+    max-width: 200px;
+}
+
+.n1 img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(102, 78, 78, 0.1);
+    margin-bottom: 10px;
+}
+
+.n1 h3 {
+    font-size: 1.2rem;
+    color: #222;
+}
+.name {
+    font-size: 4em;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+/* Media Queries */
+
+/* For Large Devices (Desktops and Laptops) */
+@media (min-width: 1025px) {
+    .navbar-menu a {
+        font-size: 1rem;
+    }
+
+    .information h1 {
+        font-size: 2.5rem;
+    }
+
+    .profession {
+        font-size: 1.5rem;
+    }
+
+    .image img {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    .video iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .n1 {
+        max-width: 200px;
+    }
+}
+
+/* For Medium Devices (Tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-menu a {
+        font-size: 0.9rem;
+    }
+
+    #flex {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .image img {
+        width: 80%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .information h1 {
+        font-size: 2rem;
+    }
+
+    .profession {
+        font-size: 1.3rem;
+    }
+
+    .hr, .hr h1, .hr p {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .book-now {
+        font-size: 0.9rem;
+    }
+
+    .video iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    .n1 img {
+        width: 80%;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
+}
+
+/* For Small Devices (Large Phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-menu a {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .information h1 {
+        font-size: 1.8rem;
+    }
+
+    .profession {
+        font-size: 1.1rem;
+    }
+
+    .hr h1 {
+        font-size: 1.6rem;
+    }
+
+    .book-now {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    .video iframe {
+        width: 300px;
+        height: 170px;
+    }
+
+    .n1 img {
+        width: 70%;
+    }
+
+    .social-icons img {
+        width: 28px;
+    }
+}
+
+/* For Extra Small Devices (Small Phones, Up to 575px) */
+@media (max-width: 575px) {
+    .navbar-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-menu a {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    #flex {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .information h1 {
+        font-size: 1.6rem;
+    }
+
+    .profession {
+        font-size: 1rem;
+    }
+
+    .details li {
+        font-size: 0.9rem;
+    }
+
+    .hr h1 {
+        font-size: 1.4rem;
+    }
+
+    .book-now {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .video iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .n1 img {
+        width: 60%;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}
+
+/* For Very Small Devices (Up to 400px) */
+@media (max-width: 400px) {
+    .navbar-menu a {
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+
+    .information h1 {
+        font-size: 1.4rem;
+    }
+
+    .profession {
+        font-size: 0.9rem;
+    }
+
+    .hr h1 {
+        font-size: 1.2rem;
+    }
+
+    .book-now {
+        font-size: 0.7rem;
+        padding: 6px 8px;
+    }
+
+    .video iframe {
+        width: 200px;
+        height: 130px;
+    }
+
+    .n1 img {
+        width: 50%;
+    }
+
+    .social-icons img {
+        width: 20px;
+    }
+}

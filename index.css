@@ -1,0 +1,264 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-attachment: fixed;
+    
+}
+
+.navbar {
+    background-color: whitesmoke;
+    color: #201818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-menu {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a {
+    color: #221a1a;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    
+}
+
+.navbar-menu a:hover {
+    background-color: #721f1f;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.main {
+    background-image: url('https://img1.wsimg.com/isteam/ip/1172a89b-094a-415b-99fe-cc1e7d3cd9b0/blob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    width: 25px;
+    background-position: center; 
+    flex-wrap: wrap;
+    margin-top: 10px;
+  
+}
+
+.main {
+    padding: 100px;
+    width: 100%;
+}
+
+.heading{
+    font-size: 3em;
+    margin-bottom: 15px; 
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+.heading2 {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+.heading3 {
+    font-size: 1em;
+    color:brown;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+.bag {
+    width: 90%; 
+    max-width:700px;
+    height: 700px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 30px auto; 
+    padding: 20px; 
+}
+
+.bag img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid black; 
+}
+
+.bag h3 {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.bag p {
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.center {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+    color: brown;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+    .navbar-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+    }
+
+    .navbar-menu a {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 3em;
+    }
+
+    .heading2 {
+        font-size: 2em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+    }
+
+    .heading3 {
+        font-size: 2em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+    }
+
+    .bag h3 {
+        font-size: 25px;
+    }
+
+    .bag p {
+        font-size: 20px;
+    }
+
+    .center {
+        font-size: 0px;
+    }
+}
+
+
+
+@media (max-width: 920px) {
+    navbar-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+
+    .navbar-menu a {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+
+    .heading2 {
+        font-size: 1.5em;
+    }
+
+    .heading3 {
+        font-size: 1.5em;
+    }
+
+    .bag h3 {
+        font-size: 20px;
+    }
+
+    .bag p {
+        font-size: 16px;
+    }
+
+    .center {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:5px;
+    }
+
+    .navbar-menu a {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .heading2 {
+        font-size: 1em;
+    }
+
+    .heading2 {
+        font-size: 1em;
+    }
+
+    .bag h3 {
+        font-size: 18px;
+    }
+
+    .bag p {
+        font-size: 14px;
+    }
+
+    .center {
+        font-size: 30px;
+    }
+}
+
+

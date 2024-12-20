@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    width: 100%;
+}
+
+h1 {
+    color: #fbfbfb;
+}
+
+h2, h3 {
+    color: brown;
+    font-size: 2em;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+}
+
+/* Sandeep Section */
+.sandeep {
+    background-image: url('https://cdn-media-2.freecodecamp.org/w1280/5f9c9f62740569d1a4ca4255.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.sandeep-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sandeep h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.sandeep p {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* About, Bio, Schedule, Tickets, Location, FAQ Sections */
+.about, .bio, .schedule, .tickets, .location, .faq {
+    text-align: center;
+}
+
+.about h2, .bio h2, .schedule h2, .tickets h2, .location h2, .faq h2 {
+    margin-bottom: 5px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Schedule Section */
+.schedule ul {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Tickets Section */
+.tickets form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tickets select {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: whitesmoke;
+    color: #201818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a {
+    color: #221a1a;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+    background-color: #721f1f;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Responsive Media Queries */
+
+/* Smartphones (Portrait) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .sandeep {
+        padding: 60px 10px;
+    }
+
+    .sandeep h1 {
+        font-size: 2.5rem;
+    }
+
+    .sandeep p {
+        font-size: 1.2em;
+    }
+
+    .gallery img {
+        max-width: 100px;
+    }
+
+    .navbar-menu {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .tickets form {
+        width: 90%;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2em;
+    }
+
+    #map iframe {
+        height: 250px;
+    }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .sandeep {
+        padding: 70px 15px;
+    }
+
+    .sandeep h1 {
+        font-size: 3rem;
+    }
+
+    .sandeep p {
+        font-size: 1.5em;
+    }
+
+    .gallery img {
+        max-width: 250px;
+    }
+
+    .navbar-menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .tickets form {
+        width: 80%;
+    }
+
+    .faq-item h3 {
+        font-size: 1.4em;
+    }
+
+    #map iframe {
+        height: 350px;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 769px) {
+    .sandeep {
+        padding: 80px 20px;
+    }
+
+    .sandeep h1 {
+        font-size: 3rem;
+    }
+
+    .sandeep p {
+        font-size: 1.8em;
+    }
+
+    .gallery img {
+        max-width: 300px;
+    }
+
+    .navbar-menu {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .tickets form {
+        width: 40%;
+    }
+
+    .faq-item h3 {
+        font-size: 1.5em;
+    }
+
+    #map iframe {
+        max-width: 600px;
+    }
+}
+
+/* Desktops with Larger Screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .sandeep {
+        padding: 120px 40px;
+        background-size: cover;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        
+    }
+
+    .navbar-menu a {
+        padding: 10px 20px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.8em;
+    }
+}
+
+#map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

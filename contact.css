@@ -1,0 +1,215 @@
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    background-image: url('https://5.imimg.com/data5/BR/VR/NI/SELLER-22967334/auditorium-works-provides-complete-interior-1000x1000.jpg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-family: Courier;
+    font-size: 3em; /* Corrected to 'em' */
+     /* Margin to prevent overlap with navbar */
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: brown;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: whitesmoke;
+    color: #201818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a {
+    
+    color: #221a1a;
+    text-decoration: none;
+    padding: 4px 6px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+    background-color: #721f1f;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Additional Styles to Prevent Content Overlap */
+body {
+    padding-top: 30px; /* Space to prevent content from being hidden by the navbar */
+    height: auto;
+    
+}
+
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    .contact .container {
+        width: 90%; /* Make the container full width with some margin */
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for better spacing with fixed navbar */
+    }
+
+    .contact h2 {
+        font-size: 1.5em; /* Adjust font size for headers */
+    }
+
+    .contact p {
+        font-size: 1em; /* Smaller font size for paragraphs */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%; /* Full width input fields */
+    }
+
+    .navbar-menu {
+        flex-direction: row; /* Stack navbar items vertically */
+        gap: 5px; /* Reduce gap between items */
+        
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .contact .container {
+        width: 80%; /* Slightly narrower container */
+        padding: 20px; /* Consistent padding */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Adjusted font size */
+    }
+
+    .contact h2 {
+        font-size: 1.8em; /* Adjusted header size */
+    }
+
+    .navbar-menu {
+        flex-direction: row; /* Keep navbar items horizontal */
+        gap: 10px; /* Consistent spacing */
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    .contact .container {
+        max-width: 700px; /* Slightly narrower max width */
+        padding: 30px; /* More padding for larger screens */
+    }
+
+    h1 {
+        font-size: 3em; /* Original font size */
+    }
+
+    .contact h2 {
+        font-size: 2em; /* Original header size */
+    }
+
+    
+}
